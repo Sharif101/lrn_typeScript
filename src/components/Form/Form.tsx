@@ -8,7 +8,7 @@ type UserData = {
 };
 
 // এটা হচ্ছে state variable। formData-তে আমরা ইউজার ইনপুট রাখব। শুরুতে সব ফাঁকা (empty) বা age এর ক্ষেত্রে ০। <UserData> মানে হলো এই স্টেটের ধরন হবে UserData টাইপের মতো।
-export default function ExampleTsV2() {
+export default function Form() {
   const [formData, setFormData] = useState<UserData>({
     name: "",
     age: 0,

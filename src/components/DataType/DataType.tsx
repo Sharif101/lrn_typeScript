@@ -4,7 +4,7 @@ type GreetingProps = {
   age?: number; // optional
 };
 
-export default function ExampleTs() {
+export default function DataType() {
   // 2. Create a user object with the defined type
   const user: GreetingProps = {
     name: "Alice",
