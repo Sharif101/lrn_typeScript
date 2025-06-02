@@ -42,7 +42,7 @@ export default function Form() {
           placeholder="Your Name"
           value={formData.name}
           onChange={handleChange}
-          className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
 
         <input
@@ -51,7 +51,7 @@ export default function Form() {
           placeholder="Your Age"
           value={formData.age}
           onChange={handleChange}
-          className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
 
         <input
@@ -60,7 +60,7 @@ export default function Form() {
           placeholder="Your Email"
           value={formData.email}
           onChange={handleChange}
-          className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
 
         <button
@@ -76,11 +76,7 @@ export default function Form() {
           <button
             onClick={() => {
               setSubmitted(null);
-              setFormData({
-                name: "",
-                age: 0,
-                email: "",
-              });
+              setFormData({ name: "", age: 0, email: "" });
             }}
             className="absolute top-2 right-2 text-gray-400 hover:text-red-500 text-xl font-bold focus:outline-none"
             aria-label="Clear"
@@ -88,7 +84,6 @@ export default function Form() {
             ×
           </button>
 
-          {/* Submitted Data */}
           <p className="text-gray-700">
             <strong>Name:</strong> {submitted.name}
           </p>

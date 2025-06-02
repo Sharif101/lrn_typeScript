@@ -4,6 +4,7 @@ import MainLayout from "./layouts/MainLayout";
 import HomePage from "./pages/HomePage";
 import DataTypePage from "./pages/DataTypePage";
 import FormPage from "./pages/FormPage";
+import TodoPage from "./pages/TodoPage";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route index element={<HomePage />} />
         <Route path="data-type" element={<DataTypePage />} />
         <Route path="form-submission" element={<FormPage />} />
+        <Route path="todo" element={<TodoPage />} />
       </Route>
     </Routes>
   );
